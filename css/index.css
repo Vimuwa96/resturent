@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -71,11 +72,6 @@
   text-align: justify;
 }
 
-.services {
-  height: 100vh;
-  background-color: rgb(251, 252, 253);
-}
-
 .enjoy .header {
   font-size: 75px;
   line-height: 75px;
@@ -99,7 +95,7 @@
     transform: rotate(360deg);
   }
 }
-
+/* Services Section CSS */
 .service_card {
   display: flex;
   background-color: white;
@@ -132,9 +128,36 @@
 .service_head p {
   padding: 15px 0 0 25px;
   font-weight: 500;
+  font-size: larger;
 }
 
 .service_para p {
   padding: 5px 25px 0 25px;
   text-align: justify;
+}
+
+#card_images2 {
+  display: flex;
+  align-self: end;
+}
+
+#card_images3 {
+  display: flex;
+  justify-content: right;
+}
+
+.about_us p {
+  font-family: "Dancing Script", cursive;
+  font-size: 35px;
+  color: orange;
+  font-weight: 500;
+}
+
+.welcome p {
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.about_resturent {
+  line-height: 25px;
 }
