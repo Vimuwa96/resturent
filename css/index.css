@@ -189,3 +189,19 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+
+.wrap-menu {
+  line-height: 25px;
+}
+
+.food_menu p {
+  font-family: "Dancing Script", cursive;
+  font-size: 35px;
+  color: orange;
+  font-weight: 800;
+}
+
+.most-popular p {
+  font-size: 35px;
+  font-weight: 500;
+}
