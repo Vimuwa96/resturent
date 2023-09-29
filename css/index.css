@@ -209,3 +209,30 @@
 .modal-dialog {
   background-color: transparent !important;
 }
+
+#menu{
+  height: 100vh;
+}
+
+
+
+#menu_icon{
+  align-items: center;
+  padding-bottom: 8px;
+  border-bottom: 1px solid orange;
+}
+
+#menu_icon i{
+  color: orange;
+}
+
+
+.menu_name{
+  padding-left: 18px;
+  line-height: 5px;
+}
+
+#menu_icon:hover{
+  border-bottom: 3px solid orange;
+
+}
