@@ -236,3 +236,52 @@
   border-bottom: 3px solid orange;
 
 }
+
+.menu_image{
+  display: flex;
+  align-items: center;
+}
+
+.menu_image image{
+  object-fit:cover;
+  display: flex;
+  align-items: center;
+
+}
+.menu-item-name{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.menu-item-price{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.menu-item-price p{
+  font-size: larger;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: orange;
+}
+
+.menu-item-add {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+
+.menu-item-add i {
+color: rgb(246, 246, 246);
+background-color: orange;
+padding: 15px;
+border-radius: 50%;
+cursor: pointer;
+}
+
+.menu-item-price p::before{
+  content: "$";
+}
