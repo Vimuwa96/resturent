@@ -12,6 +12,8 @@
       type="image/x-icon"
     />
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
     <!-- Fontawsome CDN -->
     <script
       src="https://kit.fontawesome.com/1a3b5235e0.js"
@@ -362,7 +364,7 @@
           </div>
 
           <div class="tab-content pt-3" id="pills-tabContent">
-            <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
               <div class="row">
                 <!-- Items in Menu -->
                 <div class="col-2 d-flex">
@@ -489,6 +491,8 @@
 
       </div>
     </div> 
+
+    <!-- Book a Table -->
    
     <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -507,6 +511,17 @@
     </div>
   </div>
 </div>
+
+
+<button
+        type="button"
+        class="btn btn-warning btn-floating btn-lg"
+        id="btn-back-to-top"
+        >
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="js/index.js"></script>
 
     <!-- AOS Animation -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
