@@ -1,223 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Resturent System</title>
 
-    <!-- Tab Icon -->
-    <link
-      rel="shortcut icon"
-      href="img/icons8-pizza-96.png"
-      type="image/x-icon"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resturent System</title>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <!-- Tab Icon -->
+  <link rel="shortcut icon" href="img/icons8-pizza-96.png" type="image/x-icon" />
 
-    <!-- Fontawsome CDN -->
-    <script
-      src="https://kit.fontawesome.com/1a3b5235e0.js"
-      crossorigin="anonymous"
-    ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
-    <!-- AOS Animation -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Fontawsome CDN -->
+  <script src="https://kit.fontawesome.com/1a3b5235e0.js" crossorigin="anonymous"></script>
 
-    <!-- Internal CSS -->
-    <link rel="stylesheet" href="css/index.css" />
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <!-- Bootstrap CSS CDN -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- Navigation Bar Start -->
-    <!-- Desktop Nav -->
-    <div class="container-fluid pt-1" id="main_header">
-      <nav class="navbar navbar-expand-lg" id="navigation">
-        <div class="container pt-3">
-          <a class="navbar-brand" href="#">Resturent</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <img src="img/menu.png" alt="" />
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li class="nav-item px-2">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item px-2">
-                <a class="nav-link" href="#">About</a>
-              </li>
+  <!-- Internal CSS -->
+  <link rel="stylesheet" href="css/index.css" />
 
-              <li class="nav-item px-2">
-                <a class="nav-link" href="#services">Service</a>
-              </li>
-              <li class="nav-item px-2">
-                <a class="nav-link" href="#menu">Menu</a>
-              </li>
-              <li class="nav-item px-2">
-                <a class="nav-link" href="">Contact</a>
-              </li>
-            </ul>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+</head>
 
-            <a class="book_a_table_btn" data-bs-toggle="modal" data-bs-target="#exampleModal" type="submit">Book a Table</a>
-          </div>
-        </div>
-      </nav>
-      <!-- Navigation Bar End -->
-      <!-- Main Header -->
-      <div class="container mb-3">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="left-column">
-              <div class="column">
-                <div
-                  class="enjoy"
-                  data-aos="fade-right"
-                  data-aos-offset="300"
-                  data-aos-easing="ease-in-sine"
-                  data-aos-duration="1000"
-                  data-aos-once="true"
-                >
-                  <p
-                    class="header"
-                    data-aos="fade-right"
-                    data-aos-offset="300"
-                    data-aos-easing="ease-in-sine"
-                    data-aos-duration="1500"
-                    data-aos-once="true"
-                  >
-                    <span style="color: rgb(235, 183, 12)"> Enjoy</span> Our
-                    Delicious
-                    <span style="color: rgb(235, 183, 12)"> Pizza</span>
-                  </p>
-                  <div class="para pt-2">
-                    <p class="mb-3">
-                      Tempor erat elitr rebum at clita. Diam dolor diam ipsum
-                      sit. Aliqu diam amet diam et eos. Clita erat ipsum et
-                      lorem et sit, sed stet lorem sit clita duo justo magna
-                      dolore erat amet
-                    </p>
-                  </div>
+<body>
+  <!-- Navigation Bar Start -->
+  <!-- Desktop Nav -->
+  <div class="container-fluid pt-1" id="main_header">
+    <nav class="navbar navbar-expand-lg" id="navigation">
+      <div class="container pt-3">
+        <a class="navbar-brand" href="#">Resturent</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="img/menu.png" alt="" />
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item px-2">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#">About</a>
+            </li>
 
-                  <div class="book_btn pt-3">
-                    <a class="book_a_table_btn_2" data-bs-toggle="modal" data-bs-target="#exampleModal" href="">BOOK A TABLE</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md-6 d-sm-none d-md-block d-md-none d-lg-block d-none d-sm-block"
-          >
-            <div class="column">
-              <div class="img-pizza">
-                <img src="img/pizza.png" alt="" width="100%" height="" />
-              </div>
-            </div>
-          </div>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#services">Service</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="">Contact</a>
+            </li>
+          </ul>
+
+          <a class="book_a_table_btn" data-bs-toggle="modal" data-bs-target="#exampleModal" type="submit">Book a
+            Table</a>
         </div>
       </div>
-
-      <!-- Main Header End -->
-    </div>
-
-    <!-- Our services Start -->
-    <div class="services mb-5" id="services">
-      <div class="container pt-4">
-        <div class="row">
-          <div class="col-md-3 col-6 g-3">
-            <div class="service_card">
-              <div class="service-icon">
-                <i class="fa-solid fa-user fa-3x"></i>
-                <div class="service_head">
-                  <p>Master Chefs</p>
-                </div>
-                <div class="service_para">
-                  <p>
-                    Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
-                    amet diam
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-6 g-3">
-            <div class="service_card">
-              <div class="service-icon">
-                <i class="fa-solid fa-utensils fa-3x"></i>
-                <div class="service_head">
-                  <p>Quality Food</p>
-                </div>
-                <div class="service_para">
-                  <p>
-                    Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
-                    amet diam
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-6 g-3">
-            <div class="service_card">
-              <div class="service-icon">
-                <i class="fa-solid fa-cart-shopping fa-3x"></i>
-                <div class="service_head">
-                  <p>Master Chefs</p>
-                </div>
-                <div class="service_para">
-                  <p>
-                    Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
-                    amet diam
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-6 g-3">
-            <div class="service_card">
-              <div class="service-icon">
-                <i class="fa-solid fa-headset fa-3x"></i>
-                <div class="service_head">
-                  <p>Master Chefs</p>
-                </div>
-                <div class="service_para">
-                  <p>
-                    Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
-                    amet diam
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Our Services End -->
-
-    <!-- Welcome Start -->
-    <div class="container pt-5 mb-5">
-      <div class="row mb-5">
+    </nav>
+    <!-- Navigation Bar End -->
+    <!-- Main Header -->
+    <div class="container mb-3">
+      <div class="row">
         <div class="col-md-6">
-          <div class="row">
+          <div class="left-column">
+            <div class="column">
+              <div class="enjoy" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                data-aos-duration="1000" data-aos-once="true">
+                <p class="header" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                  data-aos-duration="1500" data-aos-once="true">
+                  <span style="color: rgb(235, 183, 12)"> Enjoy</span> Our
+                  Delicious
+                  <span style="color: rgb(235, 183, 12)"> Pizza</span>
+                </p>
+                <div class="para pt-2">
+                  <p class="mb-3">
+                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum
+                    sit. Aliqu diam amet diam et eos. Clita erat ipsum et
+                    lorem et sit, sed stet lorem sit clita duo justo magna
+                    dolore erat amet
+                  </p>
+                </div>
 
-            <div class="col-6 g-3">
+                <div class="book_btn pt-3">
+                  <a class="book_a_table_btn_2" data-bs-toggle="modal" data-bs-target="#exampleModal" href="">BOOK A
+                    TABLE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 d-sm-none d-md-block d-md-none d-lg-block d-none d-sm-block">
+          <div class="column">
+            <div class="img-pizza">
+              <img src="img/pizza.png" alt="" width="100%" height="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Header End -->
+  </div>
+
+  <!-- Our services Start -->
+  <div class="services mb-5" id="services">
+    <div class="container pt-4">
+      <div class="row">
+        <div class="col-md-3 col-6 g-3">
+          <div class="service_card">
+            <div class="service-icon">
+              <i class="fa-solid fa-user fa-3x"></i>
+              <div class="service_head">
+                <p>Master Chefs</p>
+              </div>
+              <div class="service_para">
+                <p>
+                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
+                  amet diam
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-6 g-3">
+          <div class="service_card">
+            <div class="service-icon">
+              <i class="fa-solid fa-utensils fa-3x"></i>
+              <div class="service_head">
+                <p>Quality Food</p>
+              </div>
+              <div class="service_para">
+                <p>
+                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
+                  amet diam
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-6 g-3">
+          <div class="service_card">
+            <div class="service-icon">
+              <i class="fa-solid fa-cart-shopping fa-3x"></i>
+              <div class="service_head">
+                <p>Master Chefs</p>
+              </div>
+              <div class="service_para">
+                <p>
+                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
+                  amet diam
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-6 g-3">
+          <div class="service_card">
+            <div class="service-icon">
+              <i class="fa-solid fa-headset fa-3x"></i>
+              <div class="service_head">
+                <p>Master Chefs</p>
+              </div>
+              <div class="service_para">
+                <p>
+                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
+                  amet diam
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Our Services End -->
+
+  <!-- Welcome Start -->
+  <div class="container pt-5 mb-5">
+    <div class="row mb-5">
+      <div class="col-md-6">
+        <div class="row">
+
+          <div class="col-6 g-3">
             <div class="images1">
               <img src="img/image1.jpg" alt="" width="100%" height="100%" />
             </div>
@@ -242,56 +214,60 @@
       </div>
       <div class="col-md-6 g-5">
         <div class="about_resturent">
-        <div class="about_us">
-          <p>About us</p>
-        </div>
-        <div class="welcome">
-          <p>Welcome to <span> <i class="fa-solid fa-utensils fa-1x" style="color:orange;"></i></span> Resturent</p>
-        </div>
-        <div class="welcome_para">
-          <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos erat ipsum et lorem et sit, sed stet lorem sit.</p>
-        
-          <br>
-
-          <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-        
-          <div class="row pt-3 mb-3">
-            <div class="col-6">
-              <div class="row">
-                <div class="col-6 d-flex justify-content-center" id="years">
-                  <p class="numbers">15</p>
-                </div>
-                <div class="col-6">
-                  <p>Years of 
-                   <br> Experience</p>
-                </div>
-              </div>
-
-            </div>
-            <div class="col-6">
-                 <div class="row">
-                <div class="col-6 d-flex justify-content-center" id="years">
-                  <p class="numbers">50</p>
-                </div>
-                <div class="col-6">
-                  <p>Years of 
-                   <br> Experience</p>
-                </div>
-              </div>
-            </div>
-
-            
-        
+          <div class="about_us">
+            <p>About us</p>
           </div>
-          <div class="read-more">
+          <div class="welcome">
+            <p>Welcome to <span> <i class="fa-solid fa-utensils fa-1x" style="color:orange;"></i></span> Resturent</p>
+          </div>
+          <div class="welcome_para">
+            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos erat ipsum et
+              lorem et sit, sed stet lorem sit.</p>
+
+            <br>
+
+            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat
+              ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+
+            <div class="row pt-3 mb-3">
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-6 d-flex justify-content-center" id="years">
+                    <p class="numbers">15</p>
+                  </div>
+                  <div class="col-6">
+                    <p>Years of
+                      <br> Experience
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-6 d-flex justify-content-center" id="years">
+                    <p class="numbers">50</p>
+                  </div>
+                  <div class="col-6">
+                    <p>Years of
+                      <br> Experience
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+            <div class="read-more">
               <a href="">read more</a>
             </div>
-        
+
+          </div>
         </div>
       </div>
-      </div>
     </div>
-    
+
 
     <!-- Welcome End -->
 
@@ -300,71 +276,76 @@
     <div class="container pt-5" id="menu">
 
       <div class="wrap-menu">
-      <div class="food_menu text-center">
-        <p>Food Menu</p>
+        <div class="food_menu text-center">
+          <p>Food Menu</p>
+        </div>
+        <div class="most-popular text-center">
+          <p>Most Popular Items</p>
+        </div>
       </div>
-      <div class="most-popular text-center">
-        <p>Most Popular Items</p>
-      </div>
-</div>
-         
+
 
       <div class="container  pt-4">
 
         <div id="pills-tab" role="tablist">
           <div class="row">
-            <div class="col-4">
-                <div class="breakfast">
-                  <div class="row">
-                    <div class="col-12 d-flex justify-content-center" role="presentation" id="menu_icon">
-                      <div class="menu_icons d-sm-none d-none d-md-block">
-                        <i class="fa-solid fa-mug-saucer fa-3x"></i>
-                      </div>
-                      <div class="menu_name" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
-                        <p c>Popular</p>
-                        <span style="font-size:20px; font-weight:500;">Breakfast</span>  
-                      </div>
-                    </div>
-                    </div>
-                  </div>
-            </div>
-
-
-            <div class="col-4">
+            <div class="col-4" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button"
+              role="tab" aria-controls="pills-profile" aria-selected="false">
               <div class="breakfast">
                 <div class="row">
                   <div class="col-12 d-flex justify-content-center" role="presentation" id="menu_icon">
                     <div class="menu_icons d-sm-none d-none d-md-block">
-                    <i class="fa-solid fa-utensils fa-3x"></i>
-                  </div>
-                    <div class="menu_name" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
-                      <p>Popular</p>
-                      <span style="font-size:20px; font-weight:500;">Lunch</span>  
+                      <i class="fa-solid fa-mug-saucer fa-3x"></i>
+                    </div>
+                    <div class="menu_name">
+                      <p c>Popular</p>
+                      <span style="font-size:20px; font-weight:500;">Breakfast</span>
                     </div>
                   </div>
-                 
-                  </div>
-                </div>
-          </div>
-
-          <div class="col-4">
-            <div class="breakfast">
-              <div class="row">
-                <div class="col-12 d-flex justify-content-center" role="presentation" id="menu_icon">
-                  <div class="menu_icons d-sm-none d-none d-md-block">
-                  <i class="fa-solid fa-burger fa-3x"></i></div>
-                  <div class="menu_name" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
-                    <p>Popular</p>
-                    <span style="font-size:20px; font-weight:500;">Dinner</span>  
-                  </div>
-                </div>
                 </div>
               </div>
-        </div>
+            </div>
+
+
+            <div class="col-4" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+              type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+              <div class="breakfast">
+                <div class="row">
+                  <div class="col-12 d-flex justify-content-center" role="presentation" id="menu_icon">
+                    <div class="menu_icons d-sm-none d-none d-md-block">
+                      <i class="fa-solid fa-utensils fa-3x"></i>
+                    </div>
+                    <div class="menu_name">
+                      <p>Popular</p>
+                      <span style="font-size:20px; font-weight:500;">Lunch</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+              type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+              <div class="breakfast">
+                <div class="row">
+                  <div class="col-12 d-flex justify-content-center" role="presentation" id="menu_icon">
+                    <div class="menu_icons d-sm-none d-none d-md-block">
+                      <i class="fa-solid fa-burger fa-3x"></i>
+                    </div>
+                    <div class="menu_name">
+                      <p>Popular</p>
+                      <span style="font-size:20px; font-weight:500;">Dinner</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="tab-content pt-3" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+              tabindex="0">
               <div class="row">
                 <!-- Items in Menu -->
                 <div class="col-2 d-flex">
@@ -374,7 +355,7 @@
                 </div>
                 <div class="col-4 d-flex">
                   <div class="menu-item-name">
-                   <p>Chicken Burger</p> 
+                    <p>Chicken Burger</p>
                   </div>
                 </div>
                 <div class="col-4 d-flex">
@@ -400,10 +381,10 @@
                 </div>
                 <div class="col-4 d-flex">
                   <div class="menu-item-name">
-                   <p>Crispy Chicken Burger</p> 
-                   <div class="discription">
-                
-                   </div>
+                    <p>Crispy Chicken Burger</p>
+                    <div class="discription">
+
+                    </div>
                   </div>
                 </div>
                 <div class="col-4 d-flex">
@@ -422,7 +403,8 @@
 
 
             </div>
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+              tabindex="0">
               <div class="row">
                 <!-- Items in Menu -->
                 <div class="col-2 d-flex">
@@ -432,7 +414,7 @@
                 </div>
                 <div class="col-4 d-flex">
                   <div class="menu-item-name">
-                   <p>Fired Rice</p> 
+                    <p>Fired Rice</p>
                   </div>
                 </div>
                 <div class="col-4 d-flex">
@@ -458,10 +440,10 @@
                 </div>
                 <div class="col-4 d-flex">
                   <div class="menu-item-name">
-                   <p>Mongolian Rice</p> 
-                   <div class="discription">
-                
-                   </div>
+                    <p>Mongolian Rice</p>
+                    <div class="discription">
+
+                    </div>
                   </div>
                 </div>
                 <div class="col-4 d-flex">
@@ -478,50 +460,105 @@
 
               <hr>
             </div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+              tabindex="0">
               <div class="soon">
                 <p>Comming Soon!</p>
               </div>
             </div>
           </div>
-    
+
         </div>
 
 
 
       </div>
-    </div> 
+    </div>
 
     <!-- Book a Table -->
-   
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 g-0" id="book_table">
+          <div class="play">
+            <a href="https://www.youtube.com/"><i class="fa-solid fa-play fa-2x"></i></a>
+          </div>
+
+        </div>
+        <div class="col-md-6 g-0" id="book_table_form">
+          <div class="container">
+            <div class="wrap-menu pt-5">
+              <div class="food_menu text-center">
+                <p>Book a table</p>
+              </div>
+              <div class="most-popular text-center">
+                <p>Book a table in Advance</p>
+              </div>
+            </div>
+            <div class="container p-5">
+              <form action="">
+                <div class="form-floating mb-3">
+                  <input type="name" name="name" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="mobile" class="form-control" id="floatingPassword" placeholder="Password">
+                  <label for="floatingPassword">Mobile Number</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <select class="form-select my-auto" aria-label="Default select example">
+                    <option selected>Number of People</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                  </select>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input class="form-control" type="datetime-local" name="" id="">
+                </div>
+
+                <div class="serve_btn pt-3">
+                  <button type="submit" class="button">Serve the table</button>
+                </div>
+
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
     <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Book a table</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        Comming Soon
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-warning">Reserve</button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Book a table</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Comming Soon
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning">Reserve</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
 
-<button
-        type="button"
-        class="btn btn-warning btn-floating btn-lg"
-        id="btn-back-to-top"
-        >
-  <i class="fas fa-arrow-up"></i>
-</button>
+    <button type="button" class="btn btn-warning btn-floating btn-lg" id="btn-back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
 
-<script src="js/index.js"></script>
+    <script src="js/index.js"></script>
 
     <!-- AOS Animation -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -531,10 +568,9 @@
     </script>
 
     <!-- Bootstrap JS CDN -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      crossorigin="anonymous"></script>
+</body>
+
 </html>

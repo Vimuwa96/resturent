@@ -210,54 +210,48 @@
   background-color: transparent !important;
 }
 
-
-
-
-#menu_icon{
+#menu_icon {
   align-items: center;
   padding-bottom: 8px;
   border-bottom: 1px solid orange;
 }
 
-#menu_icon i{
+#menu_icon i {
   color: orange;
 }
 
-
-.menu_name{
+.menu_name {
   padding-left: 18px;
   line-height: 5px;
 }
 
-#menu_icon:hover{
+#menu_icon:hover {
   border-bottom: 3px solid orange;
-
 }
 
-.menu_image{
+.menu_image {
   display: flex;
   align-items: center;
 }
 
-.menu_image image{
-  object-fit:cover;
+.menu_image image {
+  object-fit: cover;
   display: flex;
   align-items: center;
-
 }
-.menu-item-name{
-  display: flex;
-  align-items: center;
-  justify-content: left;
-}
-
-.menu-item-price{
+.menu-item-name {
   display: flex;
   align-items: center;
   justify-content: left;
 }
 
-.menu-item-price p{
+.menu-item-price {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.menu-item-price p {
   font-size: larger;
   letter-spacing: 3px;
   font-weight: 600;
@@ -270,16 +264,15 @@
   justify-content: left;
 }
 
-
 .menu-item-add i {
-color: rgb(246, 246, 246);
-background-color: orange;
-padding: 15px;
-border-radius: 50%;
-cursor: pointer;
+  color: rgb(246, 246, 246);
+  background-color: orange;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-.menu-item-price p::before{
+.menu-item-price p::before {
   content: "LKR";
 }
 
@@ -290,6 +283,57 @@ cursor: pointer;
   display: none;
 }
 
-#btn-back-to-top i{
+#btn-back-to-top i {
+  color: white;
+}
+
+#book_table {
+  background-image: url(../img/date_image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  border-bottom-left-radius: 55px;
+  border-top-left-radius: 55px;
+}
+
+.play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.play i {
+  background-color: orange;
+  padding: 30px 33px;
+  color: white;
+  border-radius: 50%;
+}
+
+.play i:hover {
+  background-color: rgb(255, 255, 255);
+  padding: 30px 33px;
+  color: rgb(255, 123, 0);
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+#book_table_form {
+  border-top-right-radius: 55px;
+  border-bottom-right-radius: 55px;
+}
+
+.serve_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.serve_btn .button {
+  background-color: orange;
+  padding: 15px;
+  border: 0;
   color: white;
 }
