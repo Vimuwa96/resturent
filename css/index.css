@@ -293,6 +293,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  height: 550px;
   border-bottom-left-radius: 55px;
   border-top-left-radius: 55px;
 }
@@ -335,4 +336,5 @@
   padding: 15px;
   border: 0;
   color: white;
+  font-weight: 350;
 }
