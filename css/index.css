@@ -282,6 +282,7 @@
   bottom: 20px;
   right: 20px;
   display: none;
+  z-index: 100;
 }
 
 #btn-back-to-top i {
@@ -340,21 +341,13 @@
   font-weight: 350;
 }
 
-.testo-card {
-  height: 100%;
+.card-body {
+  border: 0.5px solid rgb(245, 217, 165);
 }
 
-.name,
-.profession {
-  display: flex;
-  align-items: center;
-}
-
-.name {
-  font-size: small;
-}
-
-.profession {
-  font-style: italic;
-  font-size: smaller;
+#footer {
+  background-image: url(../img/pizza-4968645_1280.jpg);
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden;
 }
