@@ -351,3 +351,9 @@
   background-size: cover;
   overflow-x: hidden;
 }
+
+.opening p {
+  font-family: "Dancing Script", cursive;
+  color: orange;
+  font-size: 25px;
+}
