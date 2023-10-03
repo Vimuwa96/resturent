@@ -267,7 +267,7 @@
 
             </div>
             <div class="read-more">
-              <a href="" id="infoClick">read more</a>
+              <button href="" class="btn" onclick="orders()" id="infoClick">read more</button>
             </div>
 
           </div>
@@ -373,7 +373,7 @@
               </div>
               <div class="col-2 d-flex">
                 <div class="menu-item-add">
-                  <a href=""><i class="fa-solid fa-plus"></i></a>
+                  <button class="btn" onclick="order()"><i class="fa-solid fa-plus"></i></button>
                 </div>
               </div>
             </div>
@@ -402,7 +402,7 @@
               </div>
               <div class="col-2 d-flex">
                 <div class="menu-item-add">
-                  <a href=""><i class="fa-solid fa-plus"></i></a>
+                  <button class="btn" onclick="order()"><i class="fa-solid fa-plus"></i></button>
                 </div>
               </div>
             </div>
@@ -434,7 +434,7 @@
               </div>
               <div class="col-2 d-flex">
                 <div class="menu-item-add">
-                  <a href=""><i class="fa-solid fa-plus"></i></a>
+                  <button class="btn" onclick="order()"><i class="fa-solid fa-plus"></i></button>
                 </div>
               </div>
             </div>
@@ -460,7 +460,7 @@
               </div>
               <div class="col-2 d-flex">
                 <div class="menu-item-add">
-                  <a href=""><i class="fa-solid fa-plus"></i></a>
+                  <button class="btn" onclick="order()"><i class="fa-solid fa-plus"></i></button>
                 </div>
               </div>
             </div>
@@ -492,7 +492,7 @@
               </div>
               <div class="col-2 d-flex">
                 <div class="menu-item-add">
-                  <i class="fa-solid fa-plus"></i>
+                  <button class="btn" onclick="order()"><i class="fa-solid fa-plus"></i></button>
                 </div>
               </div>
             </div>
@@ -518,7 +518,7 @@
               </div>
               <div class="col-2 d-flex">
                 <div class="menu-item-add">
-                  <i class="fa-solid fa-plus"></i>
+                  <button class="btn" onclick="order()"><i class="fa-solid fa-plus"></i></button>
                 </div>
               </div>
             </div>
@@ -558,37 +558,37 @@
             </div>
           </div>
           <div class="container p-5">
-            <form action="">
-              <div class="form-floating mb-3">
-                <input type="name" name="name" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Name</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="mobile" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Mobile Number</label>
-              </div>
-              <div class="form-floating mb-3">
-                <select class="form-select my-auto" aria-label="Default select example">
-                  <option selected>Number of People</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                  <option value="4">Four</option>
-                  <option value="more">Five +</option>
-                </select>
-              </div>
+            <!-- <form action=""> -->
+            <div class="form-floating mb-3">
+              <input type="name" name="name" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="mobile" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Mobile Number</label>
+            </div>
+            <div class="form-floating mb-3">
+              <select class="form-select my-auto" aria-label="Default select example">
+                <option selected>Number of People</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="more">Five +</option>
+              </select>
+            </div>
 
-              <div class="form-floating mb-3">
+            <div class="form-floating mb-3">
 
-                <input class="form-control" type="datetime-local" name="" id="datepicker">
-                <label for="datepicker">Pick a Date & Time</label>
-              </div>
+              <input class="form-control" type="datetime-local" name="" id="datepicker">
+              <label for="datepicker">Pick a Date & Time</label>
+            </div>
 
-              <div class="serve_btn pt-3">
-                <button type="submit" class="button">Serve the table</button>
-              </div>
+            <div class="serve_btn pt-3">
+              <button onclick="table()" class="button">Serve the table</button>
+            </div>
 
-            </form>
+            <!-- </form> -->
           </div>
 
         </div>
@@ -790,11 +790,34 @@
 
   <script>
 
+    function orders() {
+      iziToast.info({
+        title: 'Developer',
+        message: 'Vimukthi Malinda Rupasinghe',
+        position: 'center',
+      });
+    }
 
-    iziToast.success({
-      title: 'Hey!',
-      message: 'Thank for your order',
-    });
+    function order() {
+      iziToast.success({
+        title: 'Hey!',
+        message: 'Thank for your order',
+        position: 'topRight',
+      });
+    }
+
+
+    function table() {
+      iziToast.success({
+        title: 'Done!',
+        message: 'Table serve successfully!',
+        position: 'topRight',
+      });
+    }
+
+  </script>
+
+  <script>
 
   </script>
 
